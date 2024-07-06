@@ -116,7 +116,7 @@ class _SearchState extends State<Search> {
                         itemBuilder: (context, index) {
                           return InkWell(
                             onTap: () {
-                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => (recipeList[index].appurl)));/* RecipeView(recipeList[index].appurl)*/
+                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => RecipeView(recipeList[index].appurl)));/* RecipeView(recipeList[index].appurl)*/
                             },
                             child: Card(
                               margin: EdgeInsets.all(20),
